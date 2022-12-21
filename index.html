@@ -1,27 +1,27 @@
 <html>
 <head>
-    <title>Finger animation</title>
+  <title>Hand animation</title>
   <style>
     .animated-element {
       /* other styling for the element goes here */
     }
 
     .animated-element.running {
-      animation: myAnimation 1s linear 45;
+      animation: myAnimation 1s linear 40;
     }
 
     @keyframes myAnimation {
-			0% { left: 0; }
-			50% { left: calc(100% - 230px); }
+			0% { left: -1%; }
+			50% { left: calc(100% - 250px); }
 			100% { left: 0; }
 		}
 
   </style>
 </head>
 <body style="background-color: rgb(154, 160, 177);">
-  <button onclick="window.location.href='Hand.html'">Hand animation</button>
+  <button onclick="window.location.href='index.html'">Finger animation</button>
   <button id="startButton">Start Animation</button><br><br><br>
-  <img style="position: relative; top: 250px;" class="animated-element" src="finger3.png" alt="hand" width="230">
+  <img style="position: relative; top: 250px;" class="animated-element" src="palm-scan-gesture-biometric-security-technology.png" alt="hand" height="640" width="260">
   <script>
     document.getElementById("startButton").addEventListener("click", function() {
       const element = document.querySelector(".animated-element");
